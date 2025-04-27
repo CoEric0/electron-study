@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Electron 是什么.md",
+                "file": "快速入门.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Electron 是什么"
+              "title": "快速入门"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Electron 是什么.md",
+                "file": "快速入门.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Electron 是什么 的反向链接列表"
+              "title": "快速入门 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Electron 是什么.md",
+                "file": "快速入门.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Electron 是什么 的出链列表"
+              "title": "快速入门 的出链列表"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Electron 是什么.md",
+                "file": "快速入门.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Electron 是什么 的大纲"
+              "title": "快速入门 的大纲"
             }
           }
         ]
@@ -170,9 +170,9 @@
   },
   "active": "08d6f9147516fcb4",
   "lastOpenFiles": [
-    "主进程基础.md",
-    "快速入门.md",
     "Electron 是什么.md",
+    "快速入门.md",
+    "主进程基础.md",
     "archive/advanced/01-migrate-to-vite-react.md",
     "archive/advanced",
     "getting-started/01-project-structure.md",

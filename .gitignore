@@ -1,0 +1,4 @@
+./notes/.obsidian/*
+example/step1/.yarn/*
+example/step1/node_modules/*
+example/step1/out/*
