@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b712271ac5113580",
+        "id": "63d51c3c117eb306",
         "type": "tabs",
         "children": [
           {
-            "id": "afe617ce55182830",
+            "id": "08d6f9147516fcb4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "core-concepts/02-main-process.md",
+                "file": "core-concepts/04-ipc.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02-main-process"
+              "title": "04-ipc"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "core-concepts/02-main-process.md",
+                "file": "core-concepts/04-ipc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "02-main-process 的反向链接列表"
+              "title": "04-ipc 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "core-concepts/02-main-process.md",
+                "file": "core-concepts/04-ipc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "02-main-process 的出链列表"
+              "title": "04-ipc 的出链列表"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "core-concepts/02-main-process.md",
+                "file": "core-concepts/04-ipc.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "02-main-process 的大纲"
+              "title": "04-ipc 的大纲"
             }
           }
         ]
@@ -168,10 +168,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "afe617ce55182830",
+  "active": "6c940fe640f83038",
   "lastOpenFiles": [
-    "core-concepts/01-what-is-electron.md",
+    "core-concepts/03-renderer-process.md",
     "core-concepts/02-main-process.md",
-    "core-concepts/03-renderer-process.md"
+    "渲染进程 (Renderer Process).md",
+    "getting-started/01-project-structure.md",
+    "主进程 (Main Process).md",
+    "getting-started",
+    "core-concepts/04-ipc.md",
+    "core-concepts/04-ipc-communication.md",
+    "core-concepts/01-what-is-electron.md"
   ]
 }

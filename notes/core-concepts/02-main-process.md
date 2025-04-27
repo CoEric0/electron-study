@@ -22,3 +22,4 @@
 [[什么是 Electron？]]
 [[渲染进程 (Renderer Process)]]
 [[进程间通信 (IPC)]]
+[[预加载脚本 (Preload Scripts)]]

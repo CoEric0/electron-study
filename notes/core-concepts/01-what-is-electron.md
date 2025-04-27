@@ -15,3 +15,4 @@ Electron 是一个使用 Web 技术（HTML, CSS, JavaScript）构建跨平台桌
 
 [[主进程 (Main Process)]]
 [[渲染进程 (Renderer Process)]]
+[[进程间通信 (IPC)]]
