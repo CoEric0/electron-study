@@ -26,7 +26,6 @@ function createWindow() {
   // 加载渲染进程的 HTML 文件
   if (process.env.NODE_ENV !== 'production') {
     win.loadURL(devServerUrl);
-    // 开发模式下打开开发者工具
     win.webContents.openDevTools();
   } else {
     // 生产模式下加载打包后的 HTML

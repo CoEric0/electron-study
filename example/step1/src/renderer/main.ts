@@ -17,7 +17,7 @@ const pingResultElement = document.getElementById('ping-result');
 //   if(pingResultElement) pingResultElement.textContent = 'API not available';
 // }
 
-console.log(window)
+console.log(window.myAPI.version);
 
 console.log('Renderer script loaded.');
 
