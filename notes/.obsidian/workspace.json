@@ -11,14 +11,10 @@
             "id": "08d6f9147516fcb4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "core-concepts/04-ipc.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "04-ipc"
+              "title": "新标签页"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "core-concepts/04-ipc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "04-ipc 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -113,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "core-concepts/04-ipc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "04-ipc 的出链列表"
+              "title": "出链"
             }
           },
           {
@@ -142,13 +136,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "core-concepts/04-ipc.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "04-ipc 的大纲"
+              "title": "大纲"
             }
           }
         ]
@@ -168,15 +161,27 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6c940fe640f83038",
+  "active": "08d6f9147516fcb4",
   "lastOpenFiles": [
+    "archive/advanced/01-migrate-to-vite-react.md",
+    "archive/advanced",
+    "getting-started/01-project-structure.md",
+    "archive/getting-started/01-project-structure.md",
+    "archive/getting-started",
+    "archive/core-concepts/04-ipc.md",
+    "archive/core-concepts/01-what-is-electron.md",
+    "archive/core-concepts/03-renderer-process.md",
+    "archive/core-concepts/02-main-process.md",
+    "archive/core-concepts",
+    "archive",
+    "advanced/01-migrate-to-vite-react.md",
+    "advanced",
+    "core-concepts/04-ipc.md",
     "core-concepts/03-renderer-process.md",
     "core-concepts/02-main-process.md",
     "渲染进程 (Renderer Process).md",
-    "getting-started/01-project-structure.md",
     "主进程 (Main Process).md",
     "getting-started",
-    "core-concepts/04-ipc.md",
     "core-concepts/04-ipc-communication.md",
     "core-concepts/01-what-is-electron.md"
   ]
