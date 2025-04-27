@@ -1,4 +1,5 @@
-./notes/.obsidian/*
+notes/.obsidian/*
 example/step1/.yarn/*
 example/step1/node_modules/*
 example/step1/out/*
+example/step1/.vscode/*

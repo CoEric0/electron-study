@@ -1,20 +1,23 @@
 // 这是一个简单的渲染进程脚本示例
 
-// 尝试调用预加载脚本暴露的 API
+// 获取 HTML 元素并添加事件监听器
 const pingResultElement = document.getElementById('ping-result');
-if (pingResultElement && window.myAPI) {
-  try {
-    const result = window.myAPI.ping();
-    pingResultElement.textContent = result;
-  } catch (error) {
-    console.error('Error calling preload API:', error);
-    pingResultElement.textContent = 'Error!';
-  }
-} else {
-  if (!pingResultElement) console.error('Element #ping-result not found');
-  if (!window.myAPI) console.error('window.myAPI is not defined, check preload script and contextBridge.');
-  if(pingResultElement) pingResultElement.textContent = 'API not available';
-}
+// if (pingResultElement && window.myAPI) {
+//   console.log('Calling preload API...');
+//   try {
+//     const result = window.myAPI.ping();
+//     pingResultElement.textContent = result;
+//   } catch (error) {
+//     console.error('Error calling preload API:', error);
+//     pingResultElement.textContent = 'Error!';
+//   }
+// } else {
+//   if (!pingResultElement) console.error('Element #ping-result not found');
+//   if (!window.myAPI) console.error('window.myAPI is not defined, check preload script and contextBridge.');
+//   if(pingResultElement) pingResultElement.textContent = 'API not available';
+// }
+
+console.log(window)
 
 console.log('Renderer script loaded.');
 

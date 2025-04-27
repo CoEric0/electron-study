@@ -1,6 +1,12 @@
 import { app, BrowserWindow } from 'electron';
 import path from 'node:path';
 
+
+console.log(process.env.VITE_DEV_SERVER_URL)
+console.log(process.env['ELECTRON_RENDERER_URL'])
+console.log(process.env.NODE_ENV)
+
+
 function createWindow() {
   const win = new BrowserWindow({
     width: 800,
@@ -12,14 +18,19 @@ function createWindow() {
     },
   });
 
+  // VITE_DEV_SERVER_URL 已过时
+  // const devServerUrl = process.env.VITE_DEV_SERVER_URL || 'http://localhost:5173';
+  // ELECTRON_RENDERER_URL 是最新的
+  const devServerUrl = process.env.ELECTRON_RENDERER_URL || 'http://localhost:5173';
+
   // 加载渲染进程的 HTML 文件
-  if (process.env.VITE_DEV_SERVER_URL) {
-    win.loadURL(process.env.VITE_DEV_SERVER_URL);
+  if (process.env.NODE_ENV !== 'production') {
+    win.loadURL(devServerUrl);
     // 开发模式下打开开发者工具
     win.webContents.openDevTools();
   } else {
     // 生产模式下加载打包后的 HTML
-    win.loadFile(path.join(__dirname, '../../src/renderer/index.html')); // 修改路径指向正确的构建输出位置
+    win.loadFile(path.join(__dirname, '../../src/renderer/index.html'));
   }
 }
 
