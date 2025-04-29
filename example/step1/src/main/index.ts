@@ -1,5 +1,6 @@
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow, ipcMain } from 'electron';
 import path from 'node:path';
+import { get_ping_num, ping } from './service/ping';
 
 
 console.log(process.env.VITE_DEV_SERVER_URL)
@@ -18,11 +19,28 @@ function createWindow() {
     },
   });
 
+
+  // 进程间通讯注册
+  ipcMain.on('message-from-renderer', (event, message) => {
+    console.log('Received message from renderer:', message);
+  });
+  ipcMain.on('message-from-stand', (event, message) => {
+    console.log('Received message from stand:', message);
+  });
+  ipcMain.handle('ping', async (event) => {
+    console.log('Received ping request from stand');
+    const ping_value = await get_ping_num();
+    console.log('Ping value:', ping_value);
+
+    return ping_value;
+  }
+  );
+
+
   // VITE_DEV_SERVER_URL 已过时
   // const devServerUrl = process.env.VITE_DEV_SERVER_URL || 'http://localhost:5173';
   // ELECTRON_RENDERER_URL 是最新的
   const devServerUrl = process.env.ELECTRON_RENDERER_URL || 'http://localhost:5173';
-
   // 加载渲染进程的 HTML 文件
   if (process.env.NODE_ENV !== 'production') {
     win.loadURL(devServerUrl);
