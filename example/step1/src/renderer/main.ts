@@ -49,7 +49,7 @@ if (sendButton && inputMessage) {
 // 后端向前端传递信息(双向)
 const pingText = document.getElementById('ping-result');
 const pingButton = document.getElementById('ping-button');
-if (pingButton) {
+if (pingText && pingButton) {
     pingButton.addEventListener('click', async () => {
         // 更新页面
         if (pingText) pingText.textContent = 'Loading...';
