@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from '../assets/react.svg' // React logo is imported from the assets directory
 import viteLogo from '/vite.svg' // Vite logo is imported from the root directory
-import './hello.css'
+import './hello.css' // side effects, let vite know
 
 export function DefaultComponent() {
   const [count, setCount] = useState(0)
@@ -13,6 +13,7 @@ export function DefaultComponent() {
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
+        {/* 'class' in ts need to write in 'className'  */}
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
