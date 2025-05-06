@@ -52,7 +52,7 @@ React 是一个流行的前端 UI 库，与 Vite 结合使用可以构建现代�
         *   创建一个根组件 (例如 `App`)。
         *   使用 `ReactDOM.createRoot().render()` 将根组件挂载到 HTML 中的某个元素 (例如 `<div id="root">`)。
         *   将原来的 DOM 操作 (如 `document.getElementById`) 替换为 React 的状态管理 (如 `useState`) 和事件处理。
-        *   保留或调整与主进程的 [[进程间通信 (IPC)]] 逻辑 (通过预加载脚本暴露的 API)。
+        *   保留或调整与主进程的 [[5. 进程间通信 (IPC)]] 逻辑 (通过预加载脚本暴露的 API)。
     *   **更新 `index.html`:**
         *   移除原有的 HTML 内容 (如按钮、文本等)。
         *   添加一个 React 应用的挂载点，例如 `<div id="root"></div>`。
@@ -92,7 +92,7 @@ React 是一个流行的前端 UI 库，与 Vite 结合使用可以构建现代�
 [[主进程 (Main Process)]]
 [[渲染进程 (Renderer Process)]]
 [[预加载脚本 (Preload Scripts)]]
-[[进程间通信 (IPC)]]
+[[5. 进程间通信 (IPC)]]
 [[打包与分发]]
 [[Vite]]
 [[React]]
