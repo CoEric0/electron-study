@@ -3,7 +3,7 @@ import reactLogo from '../assets/react.svg' // React logo is imported from the a
 import viteLogo from '/vite.svg' // Vite logo is imported from the root directory
 import './hello.css'
 
-export function defaultComponent() {
+export function DefaultComponent() {
   const [count, setCount] = useState(0)
 
   return (

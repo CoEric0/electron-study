@@ -1,10 +1,11 @@
-import { defaultComponent } from "./components/hello"
+import { DefaultComponent } from "./components/hello"
 import { Welcome } from "./components/welcome"
 
 function App() {
   return (
     <>
       <Welcome />
+      <DefaultComponent/>
     </>
   )
 }
