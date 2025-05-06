@@ -1,17 +1,16 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { Welcome } from "./components/welcome"
-
-
-import HomePage from "./components/HomePage"
-import SecondPage from "./components/SecondPage"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Welcome } from './components/welcome';
+import { SecondPage } from './components/SecondPage';
 
 function App() {
   return (
-    // React Fragment, 常用于包裹多个元素
-    <>
-      <Welcome />
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Welcome />} />
+        <Route path="/2nd" element={<SecondPage />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

@@ -1,5 +1,6 @@
 import jammy from '../assets/img/small-profile.jpg'
 import './welcome.css'
+import { Link } from 'react-router-dom'
 
 export function Welcome() {
   const name = 'nWorld'
@@ -9,6 +10,12 @@ export function Welcome() {
       <p>Hello, {name}!</p>
       <p>This is a simple welcome component.</p>
       <img src={jammy} alt="Profile" />
+
+      <button className="btn" style={{ marginLeft: '10px' }}>
+        <Link to="/2nd">前往第二页</Link>
+      </button>
+
+      
     </div>
   );
 }
