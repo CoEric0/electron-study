@@ -5,16 +5,12 @@ import { SecondPage } from './components/SecondPage';
 
 function App() {
   return (
-    // <Router>
-    //   <Routes>
-    //     <Route path="/" element={<Welcome />} />
-    //     {/* <Route path="/2nd" element={<SecondPage />} /> */}
-    //   </Routes>
-    // </Router>
-
-    <Welcome />
-
-
+    <Router>
+      <Routes>
+        <Route path="/" element={<Welcome />} />
+        <Route path="/2nd" element={<SecondPage />} />
+      </Routes>
+    </Router>
   );
 }
 

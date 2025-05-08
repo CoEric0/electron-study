@@ -12,9 +12,9 @@ function Welcome() {
       <p>This is a simple welcome component.</p>
       <img src={jammy} alt="Profile" />
 
-      {/* <button className="btn" style={{ marginLeft: '10px' }}>
+      <button className="btn" style={{ marginLeft: '10px' }}>
         <Link to="/2nd">前往第二页</Link>
-      </button> */}
+      </button>
 
       
     </div>
