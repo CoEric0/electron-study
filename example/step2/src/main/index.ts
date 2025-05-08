@@ -8,18 +8,7 @@ console.log(process.env['ELECTRON_RENDERER_URL'])
 console.log(process.env.NODE_ENV)
 
 
-function createWindow() {
-  const win = new BrowserWindow({
-    width: 800,
-    height: 600,
-    webPreferences: {
-      preload: path.join(__dirname, '../preload/index.js'), // 这里应当指向编译后的js文件
-      contextIsolation: true, // 推荐开启上下文隔离
-      nodeIntegration: false, // 推荐关闭 Node.js 集成
-    },
-  });
-
-
+function registerIpc(){
   // 进程间通讯注册
   ipcMain.on('message-from-renderer', (event, message) => {
     console.log('Received message from renderer:', message);
@@ -35,6 +24,19 @@ function createWindow() {
     return ping_value;
   }
   );
+
+}
+
+function createWindow() {
+  const win = new BrowserWindow({
+    width: 800,
+    height: 600,
+    webPreferences: {
+      preload: path.join(__dirname, '../preload/index.js'), // 这里应当指向编译后的js文件
+      contextIsolation: true, // 推荐开启上下文隔离
+      nodeIntegration: false, // 推荐关闭 Node.js 集成
+    },
+  });
 
 
   // VITE_DEV_SERVER_URL 已过时
@@ -53,6 +55,7 @@ function createWindow() {
 
 app.whenReady().then(() => {
   createWindow();
+  registerIpc();
 
   app.on('activate', () => {
     // 在 macOS 上，当单击 dock 图标并且没有其他窗口打开时，
