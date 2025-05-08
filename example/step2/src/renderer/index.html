@@ -7,22 +7,26 @@
 </head>
 <body>
     <!-- 原生 HTML 元素页面 -->
-    <h1>Hello from Electron + Vite + TypeScript!</h1>
+    <div id="row">
+        <h1>Hello from Electron + Vite + TypeScript!</h1>
 
-    <p>Backend Electron version: <span id= 'elec-version'></span></p>
+        <p>Backend Electron version: <span id= 'elec-version'></span></p>
 
-    <p>Baidu Ping: <span id="ping-result"></span></p>
-    <button id = "ping-button">Ping Baidu</button>
+        <p>Baidu Ping: <span id="ping-result"></span></p>
+        <button id = "ping-button">Ping Baidu</button>
 
-    <br>
+        <br>
 
-    <input type="text" id="input" placeholder="Type something...">
-    <button id="send-button">Send to Main</button>
-
+        <input type="text" id="input" placeholder="Type something...">
+        <button id="send-button">Send to Main</button>
+    </div>
     
 
+    <div id="react_handle"></div>
+
+
     <!-- Electron 脚本 -->
-    <script type="module" src="./src/init.ts"></script>
+    <!-- <script type="module" src="./src/init.ts"></script> -->
     <!-- React 脚本 -->
     <script type="module" src="./src/main.tsx"></script>
 </body>
