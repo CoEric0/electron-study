@@ -1,5 +1,5 @@
-.second-page {
-  text-align: center;
+.page {
+  text-align: left;
   padding: 20px;
 }
 
@@ -20,4 +20,10 @@
 
 .btn:hover {
   background-color: #3367d6;
+}
+  
+.welcome {
+background-color: #fff9e6;
+padding: 20px;
+border-radius: 10px;
 }

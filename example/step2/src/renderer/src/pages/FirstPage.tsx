@@ -19,6 +19,9 @@ export function FirstPage() {
       <button className="btn" style={{ marginLeft: '10px' }}>
         <Link to="/2nd">前往第二页</Link>
       </button>
+
+      <br />
+      
     </div>
   );
 }
