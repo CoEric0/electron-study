@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './SecondPage.css';
+import './Page.css';
 
 export function SecondPage() {
   return (
